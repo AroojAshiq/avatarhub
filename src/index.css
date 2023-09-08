@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("./fonts/Roboto/Roboto-Light.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+      format("truetype");
+}
+body {
+  background: #14003b;
+}
+body,
+p,
+li {
+  font-family: Roboto;
+}
+h1,
+h2,
+h3.h4,
+h5,
+h6 {
+  font-family: Montserrat;
+}
+.hide-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0px !important; /* For Chrome, Safari, and Opera */
+}
+/* border: 1px solid black; */
+
+/* For Tailwind 2.2 and above */
+@layer utilities {
+  .snap-x-mandatory {
+    scroll-snap-type: x mandatory;
+  }
 }
