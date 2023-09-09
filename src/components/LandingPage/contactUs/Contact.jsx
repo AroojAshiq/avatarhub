@@ -9,7 +9,7 @@ import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
-    <div className="bg-[#14003B] xl:h-screen h-auto py-5 flex justify-center items-center md:px-14 px-7">
+    <div className="bg-[#14003B] lg:h-[800px]  h-auto lg:my-10 my-20 flex justify-center items-center md:px-14 px-7">
       <div className="md:px-10 px-7 pb-6 w-full lg:gap-x-5 flex lg:flex-row flex-col lg:h-[650px] bg-[#007FFF] rounded-3xl">
         <div className="lg:w-1/2 w-full lg:space-y-0 space-y-4 h-full md:py-12 pb-6 pt-10 flex flex-col justify-between">
           <div className="space-y-2 items-center md:flex flex-col lg:block">
@@ -47,19 +47,30 @@ export default function Contact() {
           </div>
 
           <div className="flex gap-x-5 justify-center lg:justify-start items-center">
-            <div className="flex md:h-14 h-10 w-10 md:w-14 justify-center items-center rounded-full hover:bg-[#2F96FF]">
-              <img
-                src={FaceBook}
-                alt="call"
-                className="md:h-9 md:w-9 w-6 h-6"
-              />
-            </div>
-            <div className="flex md:h-14 h-10 w-10 md:w-14 justify-center items-center rounded-full hover:bg-[#2F96FF]">
-              <img src={Twitter} alt="call" className="md:h-9 md:w-9 w-6 h-6" />
-            </div>
-            <div className="flex md:h-14 h-10 w-10 md:w-14 justify-center items-center rounded-full hover:bg-[#2F96FF]">
-              <img src={Insta} alt="call" className="md:h-9 md:w-9 w-6 h-6" />
-            </div>
+            <a href="https://www.facebook.com/">
+              <div className="flex md:h-14 h-10 w-10 md:w-14 justify-center items-center rounded-full hover:bg-[#2F96FF]">
+                <img
+                  src={FaceBook}
+                  alt="call"
+                  className="md:h-9 md:w-9 w-6 h-6"
+                />
+              </div>
+            </a>
+            <a href="https://twitter.com/">
+              <div className="flex md:h-14 h-10 w-10 md:w-14 justify-center items-center rounded-full hover:bg-[#2F96FF]">
+                <img
+                  src={Twitter}
+                  alt="call"
+                  className="md:h-9 md:w-9 w-6 h-6"
+                />
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/">
+              <div className="flex md:h-14 h-10 w-10 md:w-14 justify-center items-center rounded-full hover:bg-[#2F96FF]">
+                <img src={Insta} alt="call" className="md:h-9 md:w-9 w-6 h-6" />
+              </div>
+            </a>
           </div>
         </div>
 
