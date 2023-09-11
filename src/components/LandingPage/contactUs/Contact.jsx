@@ -10,7 +10,7 @@ import ContactForm from "./ContactForm";
 export default function Contact() {
   return (
     <div className="bg-[#14003B] lg:h-[800px]  h-auto lg:my-10 my-20 flex justify-center items-center md:px-14 px-7">
-      <div className="md:px-10 px-7 pb-6 w-full lg:gap-x-5 flex lg:flex-row flex-col lg:h-[650px] bg-[#007FFF] rounded-3xl">
+      <div className="md:px-10 px-7 pb-6 w-full lg:gap-x-5 flex lg:flex-row flex-col lg:h-[650px] bg-[#AA53C6] bg-opacity-40 rounded-3xl">
         <div className="lg:w-1/2 w-full lg:space-y-0 space-y-4 h-full md:py-12 pb-6 pt-10 flex flex-col justify-between">
           <div className="space-y-2 items-center md:flex flex-col lg:block">
             <p className="font-normal md:text-lg text-base lg:text-left text-center text-white">
